@@ -121,13 +121,11 @@ int main(int argc, char **argv)
 
     auto *runManager = new G4RunManager;
 
-    //
     runManager->SetUserInitialization(new TGFDetectorConstruction());
 
     TGF_PhysicsList *physicsList = new TGF_PhysicsList();
     runManager->SetUserInitialization(physicsList);
 
-    //
     runManager->SetUserInitialization(new ActionInitialization());
 
     // Initialize G4 kernel

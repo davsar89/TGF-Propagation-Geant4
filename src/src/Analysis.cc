@@ -59,8 +59,6 @@ Analysis *Analysis::getInstance() // singleton lazy initialization
 // constructor
 Analysis::Analysis() {
 
-    G4int thread_ID = G4Threading::G4GetThreadId();
-
     const long unique_ID = myUtils::generate_a_unique_ID();
 
     const double ALT_MAX_RECORDED = Settings::record_altitude;
