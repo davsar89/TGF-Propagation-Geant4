@@ -35,7 +35,7 @@ After successful compilation, run the executable from the build directory:
 
 The executable can be run in two ways:
 
-1. Without arguments: Uses default parameters from `Settings.cc`:
+1. Without arguments: Uses default parameters from `src/src/Settings.cc`:
 ```bash
 ./TGF_Propa
 ```
@@ -56,15 +56,15 @@ Default values:
 
 Example:
 ```bash
-./TGF_Propa 10000000 12.0 5.0 -60.0 0.1 35.0 10.0 Gaussian 500.0
+./TGF_Propa 10000000 12.0 5.0 -60.0 0.0 35.0 0.0 Gaussian 500.0
 ```
 This runs the simulation with:
 - 10 million events
 - Source altitude: 12.0 km
 - Source latitude: 5.0°
 - Source longitude: -60.0°
-- Time spread (σ): 0.1 μs
+- Time spread (σ): 0.0 μs
 - Opening angle: 35.0°
-- Tilt angle: 10.0°
+- Tilt angle: 0.0°
 - Beaming type: Gaussian
 - Recording altitude: 500.0 km
